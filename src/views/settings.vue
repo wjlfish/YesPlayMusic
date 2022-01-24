@@ -350,25 +350,6 @@
 
       <div class="item">
         <div class="left">
-          <div class="title">
-            {{ $t('settings.showPlaylistsByAppleMusic') }}</div
-          >
-        </div>
-        <div class="right">
-          <div class="toggle">
-            <input
-              id="show-playlists-by-apple-music"
-              v-model="showPlaylistsByAppleMusic"
-              type="checkbox"
-              name="show-playlists-by-apple-music"
-            />
-            <label for="show-playlists-by-apple-music"></label>
-          </div>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="left">
           <div class="title">{{ $t('settings.subTitleDefault') }}</div>
         </div>
         <div class="right">

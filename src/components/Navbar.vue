@@ -33,8 +33,7 @@
       <div class="navigation-links">
         <router-link to="/" :class="{ active: $route.name === 'home' }">{{
           $t('nav.home')
-        }}</router-link
-        >
+        }}</router-link>
         <router-link
           to="/settings"
           :class="{ active: $route.name === 'settings' }"

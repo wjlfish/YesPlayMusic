@@ -35,19 +35,14 @@
           $t('nav.home')
         }}</router-link>
         <router-link
-          to="/explore"
-          :class="{ active: $route.name === 'explore' }"
+          to="/settings"
+          :class="{ active: $route.name === 'settings' }"
           >{{ $t('nav.explore') }}</router-link
         >
         <router-link
           to="/library"
           :class="{ active: $route.name === 'library' }"
           >{{ $t('nav.library') }}</router-link
-        >
-        <router-link
-          to="/settings"
-          :class="{ active: $route.name === 'settings' }"
-        >{{ $t('nav.library') }}</router-link
         >
       </div>
       <div class="right-part">

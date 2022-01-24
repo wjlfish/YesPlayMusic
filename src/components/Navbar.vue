@@ -37,13 +37,11 @@
         <router-link
           to="/settings"
           :class="{ active: $route.name === 'settings' }"
-          >{{ $t('library.userProfileMenu.settings') }}</router-link
-        >
+          >{{ $t('library.userProfileMenu.settings') }}</router-link>
         <router-link
           to="/library"
           :class="{ active: $route.name === 'library' }"
-          >{{ $t('nav.library') }}</router-link
-        >
+          >{{ $t('nav.library') }}</router-link>
       </div>
       <div class="right-part">
         <div class="search-box">
@@ -81,7 +79,6 @@
       </div>
       <hr />
       <div class="item" @click="toGitHub">
-        <svg-icon icon-class="github" />
         {{ $t('nav.github') }}
       </div>
     </ContextMenu>

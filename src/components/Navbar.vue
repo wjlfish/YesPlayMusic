@@ -2,7 +2,7 @@
   <div>
     <nav>
       <div class="win32-titlebar">
-        <div class="title">YesPlayMusic</div>
+        <div class="title">ChuMusic</div>
         <div class="controls">
           <div
             class="button minimize codicon codicon-chrome-minimize"
@@ -35,14 +35,19 @@
           $t('nav.home')
         }}</router-link>
         <router-link
-          to="/settings"
-          :class="{ active: $route.name === 'settings' }"
+          to="/explore"
+          :class="{ active: $route.name === 'explore' }"
           >{{ $t('nav.explore') }}</router-link
         >
         <router-link
           to="/library"
           :class="{ active: $route.name === 'library' }"
           >{{ $t('nav.library') }}</router-link
+        >
+        <router-link
+          to="/settings"
+          :class="{ active: $route.name === 'settings' }"
+        >{{ $t('library.userProfileMenu.settings') }}</router-link
         >
       </div>
       <div class="right-part">
@@ -166,7 +171,7 @@ export default {
       this.$router.push({ name: 'settings' });
     },
     toGitHub() {
-      window.open('https://github.com/qier222/YesPlayMusic');
+      window.open('https://github.com/wjlfish/ChuMusic');
     },
     toLogin() {
       if (process.env.IS_ELECTRON === true) {

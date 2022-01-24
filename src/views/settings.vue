@@ -483,7 +483,7 @@
       <div class="footer">
         <p class="author"
           >MADE BY
-          <a href="http://github.com/wjlfish" target="_blank">wjlfish</a></p
+          <a href="http://github.com/wjlfish" target="_blank">初音过去</a></p
         >
         <p class="version">v{{ version }}</p>
       </div>

@@ -1,9 +1,9 @@
 services:
-  YesPlayMusic:
+  ChuMusic:
     build:
       context: .
-    image: yesplaymusic
-    container_name: YesPlayMusic
+    image: Chumusic
+    container_name: ChuMusic
     ports:
       - 80:80
     restart: always

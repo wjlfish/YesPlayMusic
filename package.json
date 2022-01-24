@@ -1,9 +1,9 @@
 {
-  "name": "yesplaymusic",
+  "name": "Chumusic",
   "version": "0.4.3",
   "private": true,
   "description": "A third party music player for Netease Music",
-  "author": "qier222<qier222@outlook.com>",
+  "author": "wjlfish<wjlfish@outlook.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

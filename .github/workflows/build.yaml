@@ -58,18 +58,18 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: YesPlayMusic-mac
+          name: ChuMusic-mac
           path: dist_electron/*-universal.dmg
           if-no-files-found: ignore
 
       - uses: actions/upload-artifact@v2
         with:
-          name: YesPlayMusic-win
+          name: ChuMusic-win
           path: dist_electron/*Setup*.exe
           if-no-files-found: ignore
 
       - uses: actions/upload-artifact@v2
         with:
-          name: YesPlayMusic-linux
+          name: ChuMusic-linux
           path: dist_electron/*.AppImage
           if-no-files-found: ignore

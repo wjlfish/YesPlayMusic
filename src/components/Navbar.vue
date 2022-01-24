@@ -45,8 +45,8 @@
           >{{ $t('nav.library') }}</router-link
         >
         <router-link
-          to="/library"
-          :class="{ active: $route.name === 'library' }"
+          to="/settings"
+          :class="{ active: $route.name === 'settings' }"
         >{{ $t('nav.library') }}</router-link
         >
       </div>

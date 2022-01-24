@@ -2,7 +2,7 @@
   <div>
     <nav>
       <div class="win32-titlebar">
-        <div class="title">ChuMusic</div>
+        <div class="title">YesPlayMusic</div>
         <div class="controls">
           <div
             class="button minimize codicon codicon-chrome-minimize"
@@ -44,11 +44,6 @@
           :class="{ active: $route.name === 'library' }"
           >{{ $t('nav.library') }}</router-link
         >
-        <router-link
-          to="/library"
-          :class="{ active: $route.name === 'library' }"
-        >{{ $t('nav.library') }}</router-link
-        >
       </div>
       <div class="right-part">
         <div class="search-box">
@@ -86,6 +81,7 @@
       </div>
       <hr />
       <div class="item" @click="toGitHub">
+        <svg-icon icon-class="github" />
         {{ $t('nav.github') }}
       </div>
     </ContextMenu>
@@ -170,7 +166,7 @@ export default {
       this.$router.push({ name: 'settings' });
     },
     toGitHub() {
-      window.open('https://appinfo.wjlnb.com/chumusic/');
+      window.open('https://github.com/qier222/YesPlayMusic');
     },
     toLogin() {
       if (process.env.IS_ELECTRON === true) {

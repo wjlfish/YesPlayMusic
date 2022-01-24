@@ -44,6 +44,11 @@
           :class="{ active: $route.name === 'library' }"
           >{{ $t('nav.library') }}</router-link
         >
+        <router-link
+          to="/settings"
+          :class="{ active: $route.name === 'settings' }"
+        >{{ $t('library.userProfileMenu.settings') }}</router-link
+        >
       </div>
       <div class="right-part">
         <div class="search-box">

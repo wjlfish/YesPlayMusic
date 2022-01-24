@@ -274,43 +274,6 @@
         </div>
       </section>
 
-      <h3>第三方</h3>
-      <div class="item">
-        <div class="left">
-          <div class="title">
-            {{
-              isLastfmConnected
-                ? `已连接到 Last.fm (${lastfm.name})`
-                : '连接 Last.fm '
-            }}</div
-          >
-        </div>
-        <div class="right">
-          <button v-if="isLastfmConnected" @click="lastfmDisconnect()"
-            >断开连接
-          </button>
-          <button v-else @click="lastfmConnect()"> 授权连接 </button>
-        </div>
-      </div>
-      <div v-if="isElectron" class="item">
-        <div class="left">
-          <div class="title">
-            {{ $t('settings.enableDiscordRichPresence') }}</div
-          >
-        </div>
-        <div class="right">
-          <div class="toggle">
-            <input
-              id="enable-discord-rich-presence"
-              v-model="enableDiscordRichPresence"
-              type="checkbox"
-              name="enable-discord-rich-presence"
-            />
-            <label for="enable-discord-rich-presence"></label>
-          </div>
-        </div>
-      </div>
-
       <h3>其他</h3>
       <div v-if="isElectron && !isMac" class="item">
         <div class="left">
